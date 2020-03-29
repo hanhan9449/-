@@ -1,11 +1,17 @@
 {
-  
-  "name": "dictation",
+  "name": "dictation-english",
   "version": "1.0.0",
-  "main": "lint.js",
-  "repository": "git@github.com:hanhan9449/-.git",
+  "main": "./lint.js",
+  "repository": "git@github.com:hanhan9449/dictation.git",
   "author": "hanhan9449 <haannn@qq.com>",
-  "license": "MIT","devDependencies": {
+  "license": "MIT",
+  "keywords": [
+    "tools",
+    "utils",
+    "format",
+    "local"
+  ],
+  "devDependencies": {
     "@types/node": "^13.9.5"
   }
 }
