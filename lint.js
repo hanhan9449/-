@@ -9,7 +9,7 @@ fs.readFile(target, function (err, data) {
     var result = data
         .toString()
         .replace(/\s+/g, " ")
-        .replace(/\. /g, ".\n");
+        .replace(/(\. )|(\? )|(\! )/g, ".\n");
     fs.writeFile(target, result, function () {
         console.log("Convert " + path.basename(target) + " okay");
     });
