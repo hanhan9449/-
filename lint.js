@@ -1,24 +1,19 @@
-#! /usr/bin/env node
-const fs = require('fs')
-const path = require('path')
-
-let target = process.argv[2]
-
-// fs.readFile(target, removeSpace)
-console.log(target);
-
-
-function mixRemoveAndSplit(err, data) {
-    
-}
-function removeSpace(err, data) {
-    handleError(err)
-    console.log(data);
-    
-}
-function entireToSentence(err, data) {
-    handleError(err)
-}
+#!/usr/bin/env node
+"use strict";
+exports.__esModule = true;
+var fs = require("fs");
+var path = require("path");
+var target = process.argv[2];
+fs.readFile(target, function (err, data) {
+    handleError(err);
+    var result = data
+        .toString()
+        .replace(/\s+/g, " ")
+        .replace(/\. /g, ".\n");
+    fs.writeFile(target, result, function () {
+        console.log("Convert " + path.basename(target) + " okay");
+    });
+});
 function handleError(err) {
     if (err) {
         console.error(err);
