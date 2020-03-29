@@ -1,0 +1,12 @@
+{
+  "devDependencies": {
+    "@types/node": "^13.9.5"
+  },
+  "name": "dictation",
+  "version": "1.0.0",
+  "main": "lint.js",
+  "repository": "git@github.com:hanhan9449/-.git",
+  "author": "hanhan9449 <haannn@qq.com>",
+  "license": "MIT",
+  "private": true
+}
