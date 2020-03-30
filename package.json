@@ -11,6 +11,11 @@
     "format",
     "local"
   ],
+  "scripts": {
+    "tsc": "tsc",
+    "format": "node ./build/format",
+    "unformat": "node ./build/umformat"
+  },
   "devDependencies": {
     "@types/node": "^13.9.5"
   }
